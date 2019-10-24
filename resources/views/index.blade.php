@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>{{$page['title']}}</title>
+    <title>Degree Data {{$page['title']}}</title>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/app.css" />
     <script src="js/all.js"></script>
 
 
@@ -19,7 +19,7 @@
     @endif
   </head>
 
-  <body class="">
+  <body class="doc-container">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -27,8 +27,8 @@
       </span>
     </a>
     <div class="tocify-wrapper">
-        <img src="images/logo.png" />
-        @if(isset($page['language_tabs']))
+        <img src="/images/dd-logo.png" class="logo" />
+        {{-- @if(isset($page['language_tabs']))
             <div class="lang-selector">
                 @foreach($page['language_tabs'] as $lang)
                   <a href="#" data-language-name="{{$lang}}">{{$lang}}</a>
@@ -40,7 +40,7 @@
               <input type="text" class="search" id="input-search" placeholder="Search">
             </div>
             <ul class="search-results"></ul>
-        @endif
+        @endif --}}
       <div id="toc">
       </div>
         @if(isset($page['toc_footers']))
